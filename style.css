@@ -32,8 +32,19 @@ textarea {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+button:disabled {
+  background: rgb(206, 206, 206);
+  color: rgb(163, 163, 163);
+}
+
+button:disabled:hover {
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: no-drop;
+}
+
 .btn:hover {
   box-shadow: none;
+  cursor: pointer;
 }
 
 .btn-passed,
@@ -63,6 +74,14 @@ textarea {
   font-size: 1.5rem;
 }
 
+.itemHokje {
+  font-size: 1.25rem;
+  border: 0px silver solid;
+  display: inline-block;
+  width: 1.75rem;
+  cursor: default;
+}
+
 #keuringsdatum,
 .div16,
 .div13,
@@ -71,11 +90,11 @@ textarea {
 }
 
 .item__nok {
-  background-color: red;
+  background-color: hsl(0, 100%, 50%);
 }
 
 .item__ok {
-  background-color: green;
+  background-color: hsl(120, 100%, 25%);
 }
 
 #controlepunten__list {

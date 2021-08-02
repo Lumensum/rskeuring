@@ -1,90 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RS | Keuringen</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body onload="SetupPage()">
-<!-- <body onload="MakeListWithCheckpoints()"> -->
-    
+  <body onload="SetupPage()">
+    <!-- <body onload="MakeListWithCheckpoints()"> -->
 
     <div class="parent">
-        <div class="form__item div1" id="itemTitle">
-
-            
-
-        </div>
-        <div class="form__item div2">Identificatienummer arbeidsmiddel</div>
-        <div class="form__item div3"><input type="number" name="" id=""></div>
-        <div class="form__item div4">Merk en type arbeidsmiddel</div>
-        <div class="form__item div5"><input type="text" name="" id=""></div>
-        <!-- <div class="form__item div6">VISUELE KEURING</div>
+      <div class="form__item div1" id="itemTitle"></div>
+      <div class="form__item div2">Identificatienummer arbeidsmiddel</div>
+      <div class="form__item div3"><input type="number" name="" id="" /></div>
+      <div class="form__item div4">Merk en type arbeidsmiddel</div>
+      <div class="form__item div5"><input type="text" name="" id="" /></div>
+      <!-- <div class="form__item div6">VISUELE KEURING</div>
         <div class="form__item div7">Controlepunten</div>
         <div class="form__item div8">Bevinding</div> -->
-        <div class="form__item div9">
+      <div class="form__item div9">
+        <div id="controlepunten__list"></div>
 
-            <div id="controlepunten__list">
-
-            </div>
-
-
-            <div class="oordeel">
-                <button class="btn btn-passed" id="passButton">Pass</button>
-                <button class="btn btn-failed" id="failButton">Fail</button>
-            </div>
-
-            <div class="buttons">
-                <button class="btn" id="previousPoint">Vorige</button>
-                <button class="btn" id="nextPoint">Volgende</button>
-            </div>
-
-            <div class="hokjes" id="hokjes">
-
-            </div>
-
-        </div>
-        <div class="form__item div11">Opmerkingen</div>
-        <div class="form__item div12">
-            
-            <textarea></textarea>
-
-
-        </div>
-        <div class="form__item div13">Keuringsdatum</div>
-        <div class="form__item div14" id="keuringsdatum"> </div>
-        <div class="form__item div15">Keurmeester</div>
-        <div class="form__item div16">Roy Schrauwen</div>
-        <div class="form__item div17">Paraaf Keurmeester</div>
-        <div class="form__item div18">
-            <input type="checkbox" name="" id="">
-        </div>
+        <div class="oordeel">
+          <button class="btn btn-passed" id="passButton">Pass</button>
+          <button class="btn btn-failed" id="failButton">Fail</button>
         </div>
 
+        <div class="buttons">
+          <button class="btn" id="previousPoint">Vorige</button>
+          <button class="btn" id="nextPoint">Volgende</button>
+        </div>
 
+        <div class="hokjes" id="hokjes"></div>
+      </div>
+      <div class="form__item div11">STATUS: <span id="status"></span></div>
+      <div class="form__item div12">
+        <textarea placeholder="Opmerkingen"></textarea>
+      </div>
+      <div class="form__item div13">Keuringsdatum</div>
+      <div class="form__item div14" id="keuringsdatum"></div>
+      <div class="form__item div15">Keurmeester</div>
+      <div class="form__item div16">Roy Schrauwen</div>
+      <div class="form__item div17">Paraaf Keurmeester</div>
+      <div class="form__item div18">
+        <input type="checkbox" name="" id="" />
+      </div>
+    </div>
 
-
-
-	     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="./script.js"></script>
-
-
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
