@@ -1,4 +1,4 @@
-# RS Keuring
+# :clipboard: RS Keuring
 
 A responsive application with checklist for performing several Dutch inspections.
 
