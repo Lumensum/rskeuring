@@ -55,6 +55,14 @@ textarea {
   padding: 0.25rem;
 }
 
+#itemTitle select {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}
+
 #keuringsdatum,
 .div16,
 .div13,
