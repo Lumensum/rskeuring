@@ -43,10 +43,10 @@ button:disabled:hover {
   outline: none;
 }
 
-#keuringsdatum,
-.div16,
-.div13,
-.div15 {
+#keuringsdatum__titel,
+.keurmeester_value,
+.keuringsdatum__titel,
+.keurmeester_header {
   text-align: center;
 }
 
@@ -168,21 +168,21 @@ button:disabled:hover {
 .div12 {
   grid-area: 8 / 1 / 9 / 6;
 }
-.div13 {
+.keuringsdatum__titel {
   grid-area: 9 / 1 / 10 / 2;
 }
-.div14 {
+.keuringsdatum__datum {
   grid-area: 10 / 1 / 11 / 2;
 }
-.div15 {
+.keurmeester_header {
   grid-area: 9 / 2 / 10 / 4;
 }
-.div16 {
+.keurmeester_value {
   grid-area: 10 / 2 / 11 / 4;
 }
-.div17 {
+.paraaf__header {
   grid-area: 9 / 4 / 10 / 6;
 }
-.div18 {
+.paraaf__value {
   grid-area: 10 / 4 / 11 / 6;
 }

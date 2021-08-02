@@ -9,17 +9,12 @@
   </head>
 
   <body onload="SetupPage()">
-    <!-- <body onload="MakeListWithCheckpoints()"> -->
-
     <div class="parent">
       <div class="form__item div1" id="itemTitle"></div>
       <div class="form__item div2">Identificatienummer arbeidsmiddel</div>
       <div class="form__item div3"><input type="number" name="" id="" /></div>
       <div class="form__item div4">Merk en type arbeidsmiddel</div>
       <div class="form__item div5"><input type="text" name="" id="" /></div>
-      <!-- <div class="form__item div6">VISUELE KEURING</div>
-        <div class="form__item div7">Controlepunten</div>
-        <div class="form__item div8">Bevinding</div> -->
       <div class="form__item div9">
         <div id="controlepunten__list"></div>
 
@@ -40,13 +35,13 @@
         <textarea placeholder="Opmerkingen"></textarea>
       </div>
 
-      <div class="form__item div13">Keuringsdatum</div>
-      <div class="form__item div14" id="keuringsdatum"></div>
-      <div class="form__item div15">Keurmeester</div>
-      <div class="form__item div16">Roy Schrauwen</div>
-      <div class="form__item div17">Paraaf Keurmeester</div>
-      <div class="form__item div18">
-        <input type="checkbox" name="" id="" />
+      <div class="form__item keuringsdatum__titel">Keuringsdatum</div>
+      <div class="form__item keuringsdatum__datum" id="keuringsdatum"></div>
+      <div class="form__item keurmeester_header">Keurmeester</div>
+      <div class="form__item keurmeester_value">Roy Schrauwen</div>
+      <div class="form__item paraaf__header">Paraaf Keurmeester</div>
+      <div class="form__item paraaf__value">
+        <input type="checkbox" name="paraafCheckbox" id="paraafCheckbox" />
       </div>
     </div>
 
