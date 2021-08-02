@@ -74,6 +74,10 @@ button:disabled:hover {
   font-size: 1.5rem;
 }
 
+#itemTitle select:focus {
+  outline: none;
+}
+
 .itemHokje {
   font-size: 1.25rem;
   border: 0px silver solid;

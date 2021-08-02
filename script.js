@@ -2,10 +2,10 @@ const items = [
   {
     name: "Test",
     controlepunten: [
-      "Criterium nummer 1",
-      "Criterium nummer 2",
-      "Criterium nummer 3",
-      "Criterium nummer 4",
+      "Er is criterium 1",
+      "Criterium 2 is aanwezig",
+      "Criterium nummer 3 is schoon",
+      "Geen last van 4",
     ],
   },
   {
@@ -116,19 +116,15 @@ function ShowCurrentCheckpoint() {
     ": " +
     items[typeOfItemToCheck]["controlepunten"][currentCheckpointIndex];
 
-  console.log(`huidige positie: ${currentCheckpointIndex}`);
-  console.log(
-    `aantal items: ${items[typeOfItemToCheck]["controlepunten"].length}`
-  );
+  //   console.log(`huidige positie: ${currentCheckpointIndex}`);
+  //   console.log(`aantal items: ${items[typeOfItemToCheck]["controlepunten"].length}`);
 
   if (currentCheckpointIndex == 0) {
-    console.log("eerste item");
     prevbtn.disabled = true;
   } else if (
     currentCheckpointIndex ==
     items[typeOfItemToCheck]["controlepunten"].length - 1
   ) {
-    console.log("laatste item");
     nextbtn.disabled = true;
   } else {
     prevbtn.disabled = false;
@@ -162,10 +158,10 @@ function ChangeItemType() {
 
 function CreateHokjes() {
   itemHokjes.innerHTML = "";
-  console.log(
-    'items[typeOfItemToCheck]["controlepunten"].length: ' +
-      items[typeOfItemToCheck]["controlepunten"].length
-  );
+  //   console.log(
+  //     'items[typeOfItemToCheck]["controlepunten"].length: ' +
+  //       items[typeOfItemToCheck]["controlepunten"].length
+  //   );
   for (
     let index = 0;
     index < items[typeOfItemToCheck]["controlepunten"].length;
@@ -211,9 +207,10 @@ function SetCheckpointValue(checkpointToStoreTo, valueToStore) {
   if (Object.values(dataArray).indexOf("fail") > -1) {
     statusInspectie.innerHTML = "AFKEUR";
     statusInspectie.style.backgroundColor = "hsl(0, 100%, 50%)";
-    console.log("afkeur");
+    //console.log("afkeur");
     return;
   }
+
   statusInspectie.innerHTML = "GOEDGEKEURD";
   statusInspectie.style.backgroundColor = "#FFFFFF";
 }
